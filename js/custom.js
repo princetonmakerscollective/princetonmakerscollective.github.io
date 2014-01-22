@@ -14,9 +14,9 @@ function getEvents(target)
 		data["items"].forEach(function(entry)
 		{
 			// Event title
-			targetDiv.append("<h2>" + entry["summary"] + "</h2>" +
-			"<h3>" + entry["start"]["dateTime"] + "</h3>"
-			+ "<p>" + entry["description"] + "</p>");
+			targetDiv.append("<div><h2>" + entry["summary"] + "</h2>" +
+			"<h4>" + entry["start"]["dateTime"] + "</h4>"
+			+ "<p>" + entry["description"] + "</p></div>");
 		});
 		console.log(data);
 		
