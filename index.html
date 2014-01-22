@@ -1,13 +1,25 @@
 ---
-layout: default
-title: Your New Jekyll Site
+layout: custom
+title: Princeton Makers Collective
 ---
+<!-- Content
+    ================================================== -->
+	<div class="container" role="main">
+		<div class="well" style="margin-top:1em; text-align: center;">
+			<div class="banner">
+				<embed class="bannerimg" src="img/cpu.svg" fill="white" width="150px" height="150px" type="image/svg+xml"/>
+				<embed class="bannerimg" src="img/gears.svg" width="150px" height="150px" type="image/svg+xml"/> 
+				<embed class="bannerimg" src="img/3dprinter.svg" width="150px" height="150px" type="image/svg+xml"/> 
+			</div>
+			<h2>Princeton Makers Collective</h2>
+			<p>
+				Community of makers, hackers, and tinkerers @ Princeton University.
+			</p>
 
-<div id="home">
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-    {% for post in site.posts %}
-      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
-    {% endfor %}
-  </ul>
-</div>
+			{% include whoarewe.html %}
+			{% include events.html %}
+			{% include calendar.html %}
+			{% include contact.html %}						
+
+		</div>
+	</div>
