@@ -5,8 +5,27 @@ title: Princeton Makers Collective
 <!-- Content
     ================================================== -->
 	<div class="container minipageContainer" role="main">
-			{% include whoarewe.html %}
-			{% include wherearewe.html %}
-			{% include events.html %}
-			{% include contact.html %}		
+          <div class="row">
+            <div class="col-xs-12">
+	      {% include events.html %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-6">
+	      {% include whoarewe.html %}
+            </div>
+            <div class="col-xs-6">
+	      {% include wherearewe.html %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+	      {% include calendar.html %}
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-12">
+	      {% include contact.html %}
+            </div>
+          </div>
 	</div>
