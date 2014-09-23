@@ -31,12 +31,10 @@ img{
 }
 .container
 {
-	text-align:center;
 }
 
 // 2. Navigation
 // --------------------------------------------------
-
 
 
 // 3. Pages
@@ -51,20 +49,36 @@ img{
 .minipage
 {
 	padding-bottom: 40px;
+        p
+        {
+                line-height: 1.5;
+        }
 	h2
 	{
 		font-size: 14pt;
-		font-weight: 300;
+		font-weight: 600;
 		text-transform: uppercase;
-		color: #AAA;
+                font-style: italic;
+                margin-bottom: 20px;
+		color: #444;
 	}
 }
 .upcomingEvents
 {
-	div
+	> div
 	{
-		padding:1px;
+                border: 1px solid #ddd;
+                border-radius: 10px;
+		padding: 15px 30px;
+                margin-bottom: 10px;
 	}
+        h2 {
+                margin-top: 10px;
+                margin-bottom: 12px;
+        }
+        h4 {
+                font-size: 15px;
+        }
 }
 
 // 4. Shared Styles
@@ -72,22 +86,26 @@ img{
 
 .masthead
 {
+        background-color: #FFB067;
+        background-image: linear-gradient(to bottom, #FFBA46, #FFB067);
+        text-align: center;
 	.title
 	{
-		font-weight: 100;
+		font-weight: 400;
 		font-size: 32pt;
 	}
 
 	.subtitle
 	{
-		font-weight: 300;
+		font-weight: 400;
 		font-size: 12pt;
-		color: #AAA;
+		color: #222;
 	}
 }
 
 .footer
 {
-	font-size:5pt;
+	font-size: 9px;
+        line-height: 1.5;
+        text-align: center;
 }
-	

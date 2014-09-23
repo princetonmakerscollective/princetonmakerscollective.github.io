@@ -19,7 +19,7 @@ function getEvents(target)
 			+ "<p>" + entry["description"] + "</p></div>");
 		});
 		console.log(data);
-		
+
 	}
 	).always(function(){console.log("done")});
 }
